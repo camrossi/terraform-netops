@@ -1,9 +1,8 @@
 provider "aci" {
   # cisco-aci user name
-  username = var.apic.username
-  cert_name = var.apic.cert_name
-  private_key = var.apic.private_key
-  url      = var.apic.url 
+  username = var.aci_username
+  password =  var.aci_password
+  url      = var.apic_url
   insecure = true
 }
 

@@ -1,16 +1,11 @@
-variable "apic" {
-    type = object({
-    username          = string
-    cert_name         = string
-    private_key       = string
-    url          = string
-    })
-    default = {
-    username          = "ansible"
-    cert_name         = "ansible.crt"
-    private_key       = "/Users/camrossi/Coding/aci-certs/ansible.key"
-    url          = "https://fab2-apic1.cam.ciscolabs.com/"
-  }
+variable "aci_username" {
+  type = string
+}
+variable "aci_password" {
+  type = string
+}
+variable "apic_url" {
+  type = string
 }
 
 variable "tenant" {
@@ -23,8 +18,3 @@ variable "vrf" {
 variable "bd" {
   type = string  
 }
-
-variable "tag" {
-  type = string  
-}
-
