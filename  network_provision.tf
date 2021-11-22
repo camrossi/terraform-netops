@@ -17,7 +17,7 @@ resource "aci_vrf" "vrf" {
 }
 
 
-resource "aci_bridge_domain" "bdapp1" {
+resource "aci_bridge_domain" "bd" {
   tenant_dn = aci_tenant.tenant.id
   name      = var.bd
   unicast_route = "yes"
