@@ -1,11 +1,7 @@
-output "tenant_name" {
-  value = aci_tenant.tenant.name
+output "tenant_id" {
+  value = aci_tenant.tenant.id
 }
 
-output "vrf_name" {
-  value = aci_vrf.vrf.name
-}
-
-output "bd_name" {   
-  value = aci_bridge_domain.bd.name            
+output "bd_id" {   
+  value = aci_bridge_domain.bd.id            
 }

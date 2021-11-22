@@ -25,7 +25,7 @@ resource "aci_bridge_domain" "bd" {
 }
 
 resource "aci_subnet" "subnet" {
-        parent_dn        = aci_bridge_domain.bd.id
+        parent_dn        = aci_bridge_domain.bd
         ip               = "10.0.0.1/16"
         preferred        = "no"
         scope            = ["private"]
